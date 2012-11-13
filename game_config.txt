@@ -1,0 +1,8 @@
+item glove start
+item pouch start
+item sack north
+path east start
+path north south
+path north east
+path goal north glove
+

@@ -1,0 +1,10 @@
+{% from "_formhelpers.html" import render_field %}
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+<form method="post" action="/register">
+    <dl>
+        {{ render_field(reg_form.username) }}
+        {{ render_field(reg_form.password) }}
+    </dl>
+<p><input type=submit value=Register>
+</form>

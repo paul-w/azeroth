@@ -1,0 +1,11 @@
+.output{
+  height: 50%;
+}
+
+.display{
+  width: 100%;
+}
+
+.left{
+  float: right;
+}

@@ -1,0 +1,30 @@
+// 
+//  Stickies
+//  Paul Woods
+//
+
+
+$(document).ready(function() {
+    //back = $("#wall");
+    console.log("works");
+        
+     
+    $.getJSON('/get_stickies', function(data) {
+      var items = [];
+
+        $.each(data, function(id, o) {
+            x = o[0];
+            y = o[1];
+            text = o[2];
+            var box = $("<div>");
+            box.addClass("page-image");
+            box.css("width", 50); 
+            box.css("height", 50);
+            console.log("x:", x);
+            box.offset({left: x, top:y});
+            box.appendTo('body');
+        });
+    console.log(items);
+});
+
+});

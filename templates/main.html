@@ -1,0 +1,15 @@
+{% from "_formhelpers_two.html" import render_field %}
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+
+<form method="post" action="/">
+    <dl>
+        <textarea class="output display" disabled = "yes">
+            {{ history }}
+        </textarea> 
+        <div class = "right" >
+            {{ game_form.inp }}
+        </div>
+    </dl>
+<p><input type=submit value=Play>
+</form>
